@@ -105,10 +105,17 @@ p {
 /* Герой */
 
 .hero {
-    background-color: var(--backround-dark);
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     padding: 200px;
     margin-bottom: 94px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Img\ overlay\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-text {
