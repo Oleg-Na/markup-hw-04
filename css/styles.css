@@ -7,6 +7,7 @@
     --contact-color: rgba(255, 255, 255, 0.6);
     --accent-color: #2196f3;
     --button-color: #F5F4FA;
+    --link-color: #AFB1B8;
 }
 
 /* main config */
@@ -293,7 +294,7 @@ p {
     justify-content: center;
 }
 
-.our-team-list li + li {
+.our-team-list .teammate + .teammate {
     margin-left: 30px;
 }
 
@@ -311,7 +312,7 @@ p {
 }
 
 .prof {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -322,13 +323,59 @@ p {
     color: var(--text-color);
 }
 
-.our-team-list li {
+.teammate {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-list img {
     border-radius: 0px;
+}
+
+.soc-link {
+    display: flex;
+    justify-content: center;
+    width: 206px;
+    height: 44px;
+    margin-top: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.team-soc-icon-list {
+    margin: 0;
+    padding: 0;
+}
+
+.team-soc-icon-link {
+    display: flex;
+    background-color: var(--backround-light);
+    fill: var(--link-color);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-soc-icon-link:hover {
+    background-color: var(--accent-color);
+    fill: var(--second-color);
+}
+
+.team-soc-icon {
+    width: 44px;
+    height: 44px;
+    fill: currentColor;
+    background-color: currentColor;
+    border-radius: 50%;
+    
+}
+
+
+
+.soc-link li + li {
+    margin-left: 10px;
 }
 
 
