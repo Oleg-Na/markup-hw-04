@@ -8,6 +8,7 @@
     --accent-color: #2196f3;
     --button-color: #F5F4FA;
     --link-color: #AFB1B8;
+    --team-back: #FFFFFF;
 }
 
 /* main config */
@@ -326,6 +327,7 @@ p {
 .teammate {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--team-back);
 }
 
 .our-team-list img {
@@ -347,12 +349,12 @@ p {
 .team-soc-icon-list {
     margin: 0;
     padding: 0;
+    background-color: var(--team-back);
 }
 
 .team-soc-icon-link {
+    color: var(--link-color);
     display: flex;
-    background-color: var(--backround-light);
-    fill: var(--link-color);
     border-radius: 50px;
     justify-content: center;
     align-items: center;
@@ -361,13 +363,13 @@ p {
 .team-soc-icon-link:hover {
     background-color: var(--accent-color);
     fill: var(--second-color);
+    color: var(--second-color);
 }
 
 .team-soc-icon {
     width: 44px;
     height: 44px;
     fill: currentColor;
-    background-color: currentColor;
     border-radius: 50%;
     
 }
