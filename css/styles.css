@@ -404,6 +404,9 @@ p {
 .client-list {
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0;
+
 }
 
 .client-list li + li {
@@ -470,7 +473,18 @@ p {
 
 /* Подвал */
 
+.foot-container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: baseline;
+}
+
 .basement {
+    display: flex;
     background-color: var(--backround-dark);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -508,15 +522,8 @@ p {
     color: var(--accent-color);
 }
 
-.basement li:not(:last-child) {
+.foot-cont li:not(:last-child) {
     margin-bottom: 9px;
-}
-
-.foot-cont {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 1170px;
 }
 
 .logo-foot {
@@ -529,6 +536,53 @@ p {
     color: var(--second-color);
     margin-bottom: 20px;
 }
+
+.joinus {
+    margin-left: 70px;
+    margin-right: auto;
+}
+
+.join-link-list {
+    display: flex;
+    align-items: center;
+    
+}
+
+.join-link-list li + li {
+    margin-left: 10px;
+}
+
+.join-icon-link {
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    fill: var(--second-color);
+    color: var(--second-color);
+}
+
+.join-icon-link:hover {
+    background-color: var(--accent-color);
+}
+
+.joinus p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-color);
+    margin-bottom: 20px;
+}
+
+
 
 /* Портфолио */
 /* Фильтры */
